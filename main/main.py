@@ -7,9 +7,6 @@ from machine import Pin       # Define pin
 import dht
 import json
 import utime
- 
- 
-
 
 
 # BEGIN SETTINGS
@@ -27,7 +24,7 @@ temp_low_flag = False
 soil_moisture_percentage = 50
 
 # MQTT configurations
-MQTT_SERVER = "192.168.0.179"
+MQTT_SERVER = "192.168.0.179" # this needs to be changed to the local IP of the computer running the docker-compose
 MQTT_PORT = 1883
 MQTT_USER = "this"
 MQTT_KEY = "time"
